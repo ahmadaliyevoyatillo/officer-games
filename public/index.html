@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Games - O'yin Platformasi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎮 Officer Games</h1>
+            <p>Word, Excel va PowerPoint o'yinlari bilan o'ynang!</p>
+        </header>
+
+        <nav class="navbar">
+            <button class="nav-btn active" data-page="home">Bosh Sahifa</button>
+            <button class="nav-btn" data-page="games">O'yinlar</button>
+            <button class="nav-btn" data-page="leaderboard">Reytingi</button>
+            <button class="nav-btn" data-page="profile">Profil</button>
+        </nav>
+
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="welcome-section">
+                <h2>Xush Kelibsiz! 👋</h2>
+                <p>Ushbu platformada siz Word, Excel va PowerPoint o'yinlarini o'yna olasiz.</p>
+                
+                <div class="auth-buttons">
+                    <button id="loginBtn" class="btn btn-primary">Kirish</button>
+                    <button id="registerBtn" class="btn btn-secondary">Ro'yxatdan O'tish</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Page -->
+        <section id="games" class="page">
+            <h2>O'yinlarni Tanlang</h2>
+            <div class="games-grid">
+                <div class="game-card word-card">
+                    <div class="game-icon">📝</div>
+                    <h3>Word O'yini</h3>
+                    <p>Matnni formatlash va o'qish qobiliyatini sinab ko'ring</p>
+                    <button class="btn btn-play" onclick="startGame('word')">O'ynash</button>
+                </div>
+
+                <div class="game-card excel-card">
+                    <div class="game-icon">📊</div>
+                    <h3>Excel O'yini</h3>
+                    <p>Formulalar va jadvallar bilan ishlashni o'rganing</p>
+                    <button class="btn btn-play" onclick="startGame('excel')">O'ynash</button>
+                </div>
+
+                <div class="game-card powerpoint-card">
+                    <div class="game-icon">🎨</div>
+                    <h3>PowerPoint O'yini</h3>
+                    <p>Slayd dizayni va animatsiyalar bilan ishlang</p>
+                    <button class="btn btn-play" onclick="startGame('powerpoint')">O'ynash</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Page -->
+        <section id="leaderboard" class="page">
+            <h2>🏆 Eng Yuqori Balllar</h2>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>O'rni</th>
+                        <th>Foydalanuvchi</th>
+                        <th>Jami Ball</th>
+                        <th>Word</th>
+                        <th>Excel</th>
+                        <th>PowerPoint</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                    <!-- Leaderboard rows will be loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Profile Page -->
+        <section id="profile" class="page">
+            <div class="profile-card">
+                <h2>Mening Profilim</h2>
+                <div id="profileContent">
+                    <p>Profil ma'lumotlari yuklanimoqda...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

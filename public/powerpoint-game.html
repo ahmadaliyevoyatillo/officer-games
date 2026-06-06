@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPoint O'yini - Officer Games</title>
+    <link rel="stylesheet" href="game-styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🎨 PowerPoint O'yini</h1>
+            <div class="game-stats">
+                <span>⏱️ Vaqt: <span id="timer">60</span>s</span>
+                <span>🎯 Ball: <span id="score">0</span></span>
+                <span>📊 Daraja: <span id="level">1</span></span>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="presentation-area">
+                <div class="slide" id="slide">
+                    <h2 id="slideTitle">Sarlavha</h2>
+                    <p id="slideContent">Kontent bu yerga keladi</p>
+                </div>
+            </div>
+
+            <div class="task-panel">
+                <h3>Vazifa:</h3>
+                <p id="task">Sarlavha rangini qizil qilib o'zgartiring</p>
+                
+                <div class="controls">
+                    <button class="tool-btn" onclick="changeSlideTitle()">Sarlavha O'zgartirish</button>
+                    <button class="tool-btn" onclick="changeSlideColor()">Rang Tanlash</button>
+                    <button class="tool-btn" onclick="changeBackground()">Fon O'zgartirish</button>
+                </div>
+                
+                <button class="btn btn-check" onclick="checkPPTAnswer()">Tekshirish</button>
+            </div>
+        </div>
+
+        <div class="game-footer">
+            <button class="btn btn-quit" onclick="quitGame()">Chiqish</button>
+        </div>
+    </div>
+
+    <script src="powerpoint-game.js"></script>
+</body>
+</html>

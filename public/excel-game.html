@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel O'yini - Officer Games</title>
+    <link rel="stylesheet" href="game-styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>📊 Excel O'yini</h1>
+            <div class="game-stats">
+                <span>⏱️ Vaqt: <span id="timer">60</span>s</span>
+                <span>🎯 Ball: <span id="score">0</span></span>
+                <span>📊 Daraja: <span id="level">1</span></span>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="excel-sheet">
+                <table class="spreadsheet">
+                    <tr>
+                        <td></td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td contenteditable="true" class="cell" id="A1">10</td>
+                        <td contenteditable="true" class="cell" id="B1">20</td>
+                        <td contenteditable="true" class="cell" id="C1"></td>
+                        <td contenteditable="true" class="cell" id="D1"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td contenteditable="true" class="cell" id="A2">5</td>
+                        <td contenteditable="true" class="cell" id="B2">15</td>
+                        <td contenteditable="true" class="cell" id="C2"></td>
+                        <td contenteditable="true" class="cell" id="D2"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td contenteditable="true" class="cell" id="A3"></td>
+                        <td contenteditable="true" class="cell" id="B3"></td>
+                        <td contenteditable="true" class="cell" id="C3"></td>
+                        <td contenteditable="true" class="cell" id="D3"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="task-panel">
+                <h3>Vazifa:</h3>
+                <p id="task">C1 katakga A1 + B1 (10+20) natijasini kiriting</p>
+                <button class="btn btn-check" onclick="checkExcelAnswer()">Tekshirish</button>
+            </div>
+        </div>
+
+        <div class="game-footer">
+            <button class="btn btn-quit" onclick="quitGame()">Chiqish</button>
+        </div>
+    </div>
+
+    <script src="excel-game.js"></script>
+</body>
+</html>
