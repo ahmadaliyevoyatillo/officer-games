@@ -1,0 +1,26 @@
+{
+  "name": "officer-games",
+  "version": "1.0.0",
+  "description": "Office Games Platform - Word, Excel, PowerPoint o'yinlari",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["office", "games", "word", "excel", "powerpoint"],
+  "author": "ahmadaliyevoyatillo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "dotenv": "^16.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
